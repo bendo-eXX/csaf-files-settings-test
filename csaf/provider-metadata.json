@@ -11,8 +11,10 @@
     }
   ],
   "publisher": {
-    "category": "vendor",
-    "name": "Secvisogram",
-    "namespace": "https://bendo-eXX.github.io/csaf-files-settings-test/"
+    "category": "vendor 1",
+    "name": "Secvisogram 1",
+    "namespace": "https://bendo-eXX.github.io/csaf-files-settings-test/",
+    "issuing_authority": "Placeholder 1",
+    "contact_details": "Placeholder 1"
   }
 }
