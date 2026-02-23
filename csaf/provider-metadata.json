@@ -1,13 +1,18 @@
 {
-  "canonical_url": "https://github.com/bendo-eXX/csaf-files-settings-test/csaf/provider-metadata.json",
+  "canonical_url": "https://bendo-eXX.github.io/csaf-files-settings-test/csaf/provider-metadata.json",
   "distributions": [
     {
-      "directory_url": "https://github.com/bendo-eXX/csaf-files-settings-test/csaf/"
+      "directory_url": "https://bendo-eXX.github.io/csaf-files-settings-test/csaf/"
     }
   ],
   "public_openpgp_keys": [
     {
-      "url": "https://github.com/bendo-eXX/csaf-files-settings-test/csaf/public.asc"
+      "url": "https://bendo-eXX.github.io/csaf-files-settings-test/csaf/public.asc"
     }
-  ]
+  ],
+  "publisher": {
+    "category": "vendor",
+    "name": "Secvisogram",
+    "namespace": "https://bendo-eXX.github.io/csaf-files-settings-test/"
+  }
 }
