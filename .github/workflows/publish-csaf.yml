@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-24.04
     name: Check, Sign & Publish CSAF documents
     steps:
+      - uses: actions/checkout@v4
+
       - name: Check, Sign and Publish CSAF advisories
         uses: csaf-tools/csaf-action@v0.2.0
         with:
@@ -20,6 +22,7 @@ jobs:
           publisher_issuing_authority: Placeholder
           publisher_contact_details: Placeholder
           source_csaf_documents: advisories/
+          openpgp_public_key: ${{ secrets.PGP_PUBLIC_KEY }}
           openpgp_secret_key: ${{ secrets.PGP_SIGNING_KEY }}
           target_branch: gh-pages
           generate_index_files: true
