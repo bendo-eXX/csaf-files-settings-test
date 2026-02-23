@@ -1,2 +1,2 @@
-# csaf-files
-CSAF files for Secvisogram
+# csaf-files-settings-test
+CSAF files for Secvisogram (Test/Settings repository)

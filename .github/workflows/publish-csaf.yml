@@ -5,21 +5,21 @@ on:
 
 permissions:
   contents: write
-  pages: write
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    name: Check, Sign & Publish CSAF documents
     steps:
-      - uses: actions/checkout@v4
-
-      - name: CSAF Action
+      - name: Check, Sign and Publish CSAF advisories
         uses: csaf-tools/csaf-action@v0.2.0
         with:
           publisher_name: Secvisogram
           publisher_namespace: https://bendo-eXX.github.io/csaf-files-settings-test/
+          publisher_category: vendor
           publisher_issuing_authority: Placeholder
           publisher_contact_details: Placeholder
           source_csaf_documents: advisories/
-          openpgp_public_key: ${{ secrets.PGP_PUBLIC_KEY }}
           openpgp_secret_key: ${{ secrets.PGP_SIGNING_KEY }}
+          target_branch: gh-pages
+          generate_index_files: true

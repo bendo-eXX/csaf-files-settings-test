@@ -7,14 +7,15 @@
   ],
   "public_openpgp_keys": [
     {
+      "fingerprint": "",
       "url": "https://bendo-eXX.github.io/csaf-files-settings-test/csaf/public.asc"
     }
   ],
   "publisher": {
-    "category": "vendor 1",
-    "name": "Secvisogram 1",
+    "category": "vendor",
+    "name": "Secvisogram",
     "namespace": "https://bendo-eXX.github.io/csaf-files-settings-test/",
-    "issuing_authority": "Placeholder 1",
-    "contact_details": "Placeholder 1"
+    "issuing_authority": "Placeholder",
+    "contact_details": "Placeholder"
   }
 }
