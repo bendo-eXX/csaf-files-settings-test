@@ -17,7 +17,7 @@ jobs:
         uses: csaf-tools/csaf-action@v0
         with:
           publisher_name: Secvisogram
-          publisher_namespace: https://bendo-eXX.github.io/csaf-files-settings-test/
+          publisher_namespace: https://bendo-exx.github.io/csaf-files-settings-test
           publisher_issuing_authority: Placeholder
           publisher_contact_details: Placeholder
           source_csaf_documents: advisories/
