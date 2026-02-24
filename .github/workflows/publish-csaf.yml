@@ -9,26 +9,20 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-24.04
-    name: Check, Sign & Publish CSAF documents
+    name: Publish CSAF documents
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install OpenPGP public key for csaf_provider
-        run: |
-          sudo mkdir -p /etc/csaf
-          sudo cp csaf/public.asc /etc/csaf/openpgp_public.asc
-
-      - name: Check, Sign and Publish CSAF advisories
-        uses: csaf-tools/csaf-action@v0.2.0
+      - name: Publish CSAF advisories
+        uses: csaf-tools/csaf-action@v0
         with:
           publisher_name: Secvisogram
           publisher_namespace: https://bendo-eXX.github.io/csaf-files-settings-test/
-          publisher_category: vendor
           publisher_issuing_authority: Placeholder
           publisher_contact_details: Placeholder
           source_csaf_documents: advisories/
-          openpgp_public_key: ${{ secrets.PGP_PUBLIC_KEY }}
-          openpgp_secret_key: ${{ secrets.PGP_SIGNING_KEY }}
           openpgp_use_signatures: false
-          target_branch: gh-pages
+          target_branch: 'gh-pages'
+          openpgp_secret_key: ${{ secrets.PGP_SIGNING_KEY }}
+          openpgp_public_key: ${{ secrets.PGP_PUBLIC_KEY }}
           generate_index_files: true
