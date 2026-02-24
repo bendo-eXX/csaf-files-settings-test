@@ -21,5 +21,4 @@ jobs:
           publisher_issuing_authority: Placeholder
           publisher_contact_details: Placeholder
           source_csaf_documents: advisories/
-          csaf_version: 3.5.1
           generate_index_files: true
