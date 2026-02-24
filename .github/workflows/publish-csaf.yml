@@ -22,5 +22,6 @@ jobs:
           publisher_category: "vendor"
           source_csaf_documents: advisories/
           openpgp_secret_key: ${{ secrets.PGP_SIGNING_KEY }}
+          openpgp_public_key: ${{ secrets.PGP_PUBLIC_KEY }}
           target_branch: gh-pages
           generate_index_files: true
