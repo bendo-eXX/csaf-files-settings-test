@@ -2,12 +2,12 @@
   "publisher": {
     "category": "vendor",
     "name": "Secvisogram CSAF Validator Service Team",
-    "namespace": "https://github.com/secvisogram/csaf-validator-service"
+    "namespace": "https://github.com/bendo-eXX/csaf-files-settings-test"
   },
   "public_openpgp_keys": [
     {
       "fingerprint": "A0908A85065567DF62C3F6BC63AF03DB45DEAFFF",
-      "url": "https://secvisogram.github.io/csaf-validator-service/csaf/public.asc"
+      "url": "https://bendo-exx.github.io/csaf-files-settings-test/csaf/public.asc"
     }
   ]
 }

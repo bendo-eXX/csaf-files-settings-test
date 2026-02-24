@@ -16,7 +16,7 @@ jobs:
         uses: csaf-tools/csaf-action@v0.2.0
         with:
           publisher_name: "Secvisogram CSAF Validator Service Team"
-          publisher_namespace: "https://github.com/secvisogram/csaf-files"
+          publisher_namespace: "https://github.com/bendo-eXX/csaf-files-settings-test"
           publisher_issuing_authority: "Placeholder"
           publisher_contact_details: "Placeholder Details"
           publisher_category: "vendor"
