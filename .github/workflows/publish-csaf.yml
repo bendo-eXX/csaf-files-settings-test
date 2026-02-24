@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install OpenPGP public key for csaf_provider
+        run: |
+          sudo mkdir -p /etc/csaf
+          sudo cp csaf/public.asc /etc/csaf/openpgp_public.asc
+
       - name: Check, Sign and Publish CSAF advisories
         uses: csaf-tools/csaf-action@v0.2.0
         with:
