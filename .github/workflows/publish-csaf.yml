@@ -15,7 +15,7 @@ jobs:
       - name: Check, Sign and Publish CSAF advisories
         uses: csaf-tools/csaf-action@v0.2.0
         with:
-          publisher_name: "Secvisogram CSAF Validator Service Team"
+          publisher_name: "Secvisogram Team"
           publisher_namespace: "https://github.com/bendo-eXX/csaf-files-settings-test"
           publisher_issuing_authority: "Placeholder"
           publisher_contact_details: "Placeholder Details"
